@@ -22,8 +22,12 @@ class TermsViewController: UIViewController {
     }
     
 
-    @IBAction func checkBoxTapped(_sender:UIButton){
-        
+    @IBAction func checkBoxTapped(_ sender:UIButton){
+        if sender.isSelected {
+            sender.isSelected = false
+        } else {
+            sender.isSelected = true
+        }
     }
 
 }
