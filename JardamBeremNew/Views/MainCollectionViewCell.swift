@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class MainCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imgView: UIImageView!

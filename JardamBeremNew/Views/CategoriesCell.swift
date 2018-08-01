@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Kingfisher
+
+
 
 class CategoriesCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
