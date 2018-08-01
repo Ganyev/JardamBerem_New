@@ -16,6 +16,10 @@
 		94BE9D3E2111FF58001FC8C6 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D3B2111FF58001FC8C6 /* HTTPStatusCode.swift */; };
 		94BE9D3F2111FF58001FC8C6 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D3C2111FF58001FC8C6 /* HTTPRequestManager.swift */; };
 		94BE9D402111FF58001FC8C6 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D3D2111FF58001FC8C6 /* ServerManager.swift */; };
+		94BE9D432112042C001FC8C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D422112042C001FC8C6 /* Constants.swift */; };
+		94BE9D47211204B8001FC8C6 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D46211204B8001FC8C6 /* Cities.swift */; };
+		94BE9D49211204CF001FC8C6 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D48211204CF001FC8C6 /* Categories.swift */; };
+		94BE9D4B2112085A001FC8C6 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D4A2112085A001FC8C6 /* Reviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		94BE9D3B2111FF58001FC8C6 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPStatusCode.swift; path = JardamBeremNew/Network/HTTPStatusCode.swift; sourceTree = SOURCE_ROOT; };
 		94BE9D3C2111FF58001FC8C6 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPRequestManager.swift; path = JardamBeremNew/Network/HTTPRequestManager.swift; sourceTree = SOURCE_ROOT; };
 		94BE9D3D2111FF58001FC8C6 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerManager.swift; path = JardamBeremNew/Network/ServerManager.swift; sourceTree = SOURCE_ROOT; };
+		94BE9D422112042C001FC8C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = JardamBeremNew/Helpers/Constants.swift; sourceTree = SOURCE_ROOT; };
+		94BE9D46211204B8001FC8C6 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		94BE9D48211204CF001FC8C6 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		94BE9D4A2112085A001FC8C6 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +92,8 @@
 		940F58D12111F82200F9668F /* JardamBeremNew */ = {
 			isa = PBXGroup;
 			children = (
+				94BE9D442112047D001FC8C6 /* Models */,
+				94BE9D41211203E2001FC8C6 /* Helpers */,
 				94BE9D3A2111FF41001FC8C6 /* Network */,
 				940F58D22111F82200F9668F /* AppDelegate.swift */,
 				940F58D42111F82200F9668F /* ViewController.swift */,
@@ -103,6 +113,24 @@
 				94BE9D3D2111FF58001FC8C6 /* ServerManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		94BE9D41211203E2001FC8C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				94BE9D422112042C001FC8C6 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		94BE9D442112047D001FC8C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94BE9D46211204B8001FC8C6 /* Cities.swift */,
+				94BE9D48211204CF001FC8C6 /* Categories.swift */,
+				94BE9D4A2112085A001FC8C6 /* Reviews.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,10 +246,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				94BE9D402111FF58001FC8C6 /* ServerManager.swift in Sources */,
+				94BE9D49211204CF001FC8C6 /* Categories.swift in Sources */,
 				94BE9D3E2111FF58001FC8C6 /* HTTPStatusCode.swift in Sources */,
 				940F58D52111F82200F9668F /* ViewController.swift in Sources */,
 				940F58D32111F82200F9668F /* AppDelegate.swift in Sources */,
+				94BE9D47211204B8001FC8C6 /* Cities.swift in Sources */,
+				94BE9D4B2112085A001FC8C6 /* Reviews.swift in Sources */,
 				94BE9D3F2111FF58001FC8C6 /* HTTPRequestManager.swift in Sources */,
+				94BE9D432112042C001FC8C6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
