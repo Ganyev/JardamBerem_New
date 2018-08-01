@@ -22,25 +22,20 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U4N-u7-5r6">
                                 <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1OR-H5-eWK">
-                                    <size key="itemSize" width="251" height="227"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
+                                <collectionViewLayout key="collectionViewLayout" id="Y1d-E9-QSn" customClass="PinterestLayout" customModule="JardamBeremNew" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photocell" id="UdE-Lq-qDQ" customClass="MainCollectionViewCell" customModule="JardamBeremNew" customModuleProvider="target">
-                                        <rect key="frame" x="62" y="0.0" width="251" height="227"/>
+                                        <rect key="frame" x="44" y="0.0" width="287" height="260"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="251" height="227"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="260"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2O-Kf-b1S">
-                                                    <rect key="frame" x="0.0" y="0.0" width="251" height="215.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="247"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZy-GM-tlF">
-                                                    <rect key="frame" x="0.0" y="215.5" width="251" height="11.5"/>
+                                                    <rect key="frame" x="0.0" y="247" width="287" height="13"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -57,12 +52,17 @@
                                             <constraint firstItem="pZy-GM-tlF" firstAttribute="top" secondItem="N2O-Kf-b1S" secondAttribute="bottom" id="mpD-he-Pv0"/>
                                             <constraint firstAttribute="bottom" secondItem="pZy-GM-tlF" secondAttribute="bottom" id="uRm-ro-eGJ"/>
                                         </constraints>
+                                        <size key="customSize" width="287" height="260"/>
                                         <connections>
                                             <outlet property="imgView" destination="N2O-Kf-b1S" id="C8L-Co-b2L"/>
                                             <outlet property="nameLabel" destination="pZy-GM-tlF" id="7z6-7h-FwL"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Mh7-gS-7Ff" id="tWn-J1-8hI"/>
+                                    <outlet property="delegate" destination="Mh7-gS-7Ff" id="dH8-3l-5ab"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
