@@ -8,28 +8,46 @@
 
 import UIKit
 
-class CitiesViewController: UIViewController {
-
+class CitiesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    @IBOutlet weak var regionLbl: UILabel!
+    @IBOutlet weak var regionPickerView: UIPickerView!
+    
+    var cities :[City] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        regionPickerView.dataSource = self
+        regionPickerView.delegate = self
+        ServerManager.shared.getCities(completion: setCities, error: forError)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func setCities(allCities: [City]){
+        cities  = allCities
+        self.regionPickerView.reloadAllComponents()
+    
     }
-    */
+    func forError(error: String) {
+        print(error)
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        
+        return cities[row].city_name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return cities.count
+    }
+    
+    @IBAction func readyButton (){
+        
+    }
+    
 
 }
