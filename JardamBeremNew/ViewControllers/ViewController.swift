@@ -8,49 +8,47 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
 
+    var mainMenuArray = ["Главный экран"]
+    
+    @IBOutlet weak var mainTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCities(completion: printCities) { (error) in
-            print(error)
-        }
-        ServerManager.shared.getCategories(id: 1, completion: printCategories) { (error) in
-            print(error)
-        }
-        ServerManager.shared.getReviews(completion: printReviews) { (error) in
-            print(error)
-        }
-        ServerManager.shared.getForum(completion: printForum) { (error) in
-            print(error)
-        }
+        mainTableView.dataSource = self
+//        ServerManager.shared.getCities(completion: printCities) { (error) in
+//            print(error)
+//        }
+//        ServerManager.shared.getCategories(id: 1, completion: printCategories) { (error) in
+//            print(error)
+//        }
+//        ServerManager.shared.getReviews(completion: printReviews) { (error) in
+//            print(error)
+//        }
+//        ServerManager.shared.getForum(completion: printForum) { (error) in
+//            print(error)
+//        }
+        
+    
     }
 
-    func printCities(city: [City]) {
-        for i in city {
-            print(i.city_name ?? "")
-        }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return mainMenuArray.count
     }
     
-    func printCategories(category: [Category]) {
-        for i in category {
-            print(i.category_name ?? "", i.city ?? "", i.id ?? "")
-        }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = mainMenuArray[indexPath.row]
+        return cell
     }
     
-    func printReviews(review: [Review]) {
-        for i in review {
-            print(i.email ?? "", i.id ?? "", i.reviewText ?? "")
-        }
-    }
-    
-    func printForum(forum: [Forum]) {
-        for i in forum {
-            print(i.nickName ?? "")
-        }
-    }
-    
-    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let storyboard = UIStoryboard.init(name: "Baha", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "mainvc") as! MainViewController
+//        mainMenuArray[0] =
+//        self.show(vc, sender: self)
+//    }
+
 
 }
 

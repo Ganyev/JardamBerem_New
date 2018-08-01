@@ -24,6 +24,9 @@
 		94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5521121A4D001FC8C6 /* ViewController.swift */; };
 		94BE9D5821121AFF001FC8C6 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5721121AFF001FC8C6 /* TermsViewController.swift */; };
 		94BE9D5B21121B64001FC8C6 /* Baha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BE9D5921121B64001FC8C6 /* Baha.storyboard */; };
+		94BE9D5D21121CAA001FC8C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5C21121CAA001FC8C6 /* MainViewController.swift */; };
+		94BE9D6021121F66001FC8C6 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5F21121F66001FC8C6 /* PinterestLayout.swift */; };
+		94BE9D6221121FA2001FC8C6 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6121121FA2001FC8C6 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		94BE9D5521121A4D001FC8C6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94BE9D5721121AFF001FC8C6 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		94BE9D5A21121B64001FC8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Baha.storyboard; sourceTree = "<group>"; };
+		94BE9D5C21121CAA001FC8C6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		94BE9D5F21121F66001FC8C6 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		94BE9D6121121FA2001FC8C6 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +106,7 @@
 		940F58D12111F82200F9668F /* JardamBeremNew */ = {
 			isa = PBXGroup;
 			children = (
+				94BE9D5E21121F3E001FC8C6 /* Views */,
 				94BE9D5221121A0D001FC8C6 /* ViewControllers */,
 				94BE9D4E2112159F001FC8C6 /* Storyboards */,
 				94BE9D442112047D001FC8C6 /* Models */,
@@ -145,8 +152,8 @@
 		94BE9D4E2112159F001FC8C6 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				94BE9D4F211219C3001FC8C6 /* Ramilias.storyboard */,
 				940F58D62111F82200F9668F /* Main.storyboard */,
+				94BE9D4F211219C3001FC8C6 /* Ramilias.storyboard */,
 				94BE9D5921121B64001FC8C6 /* Baha.storyboard */,
 			);
 			path = Storyboards;
@@ -157,8 +164,18 @@
 			children = (
 				94BE9D5721121AFF001FC8C6 /* TermsViewController.swift */,
 				94BE9D5521121A4D001FC8C6 /* ViewController.swift */,
+				94BE9D5C21121CAA001FC8C6 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		94BE9D5E21121F3E001FC8C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94BE9D5F21121F66001FC8C6 /* PinterestLayout.swift */,
+				94BE9D6121121FA2001FC8C6 /* MainCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +295,13 @@
 				94BE9D5821121AFF001FC8C6 /* TermsViewController.swift in Sources */,
 				94BE9D402111FF58001FC8C6 /* ServerManager.swift in Sources */,
 				94BE9D49211204CF001FC8C6 /* Categories.swift in Sources */,
+				94BE9D5D21121CAA001FC8C6 /* MainViewController.swift in Sources */,
 				94BE9D3E2111FF58001FC8C6 /* HTTPStatusCode.swift in Sources */,
 				94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */,
 				940F58D32111F82200F9668F /* AppDelegate.swift in Sources */,
+				94BE9D6221121FA2001FC8C6 /* MainCollectionViewCell.swift in Sources */,
 				94BE9D47211204B8001FC8C6 /* Cities.swift in Sources */,
+				94BE9D6021121F66001FC8C6 /* PinterestLayout.swift in Sources */,
 				94BE9D4B2112085A001FC8C6 /* Reviews.swift in Sources */,
 				94BE9D3F2111FF58001FC8C6 /* HTTPRequestManager.swift in Sources */,
 				94BE9D432112042C001FC8C6 /* Constants.swift in Sources */,
