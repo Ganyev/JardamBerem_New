@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         ServerManager.shared.getReviews(completion: printReviews) { (error) in
             print(error)
         }
+        ServerManager.shared.getForum(completion: printForum) { (error) in
+            print(error)
+        }
     }
 
     func printCities(city: [City]) {
@@ -40,6 +43,14 @@ class ViewController: UIViewController {
             print(i.email ?? "", i.id ?? "", i.reviewText ?? "")
         }
     }
+    
+    func printForum(forum: [Forum]) {
+        for i in forum {
+            print(i.nickName ?? "")
+        }
+    }
+    
+    
 
 }
 

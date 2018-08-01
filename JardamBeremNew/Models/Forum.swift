@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class ForumResult: Decodable {
+    var results: [Forum] = []
+}
+
+class Forum: Decodable {
+    var id: Int?
+    var nickName: String?
+    var phoneNumber: String?
+    var comment: String?
+    var date: String?
+}

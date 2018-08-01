@@ -64,28 +64,26 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
+    func getForum(completion: @escaping ([Forum]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.forum, completion: { (data) in
+            //TODO
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(ForumResult.self, from: data)
+                completion(result.results)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
+    
     
 }
 
-
-//http://138.68.166.31:9000/
-//
-//
-//api
-//
-//api/cities/
-//
-//api/cities/<id_of_city>
-//
-//api/cities/<id_of_city>/categories/
-//
-//api/cities/<id_of_city>/categories/<id_of_category>
-//
-//api/cities/<id_of_city>/categories/<id_of_category>/annoucements/<id_of_announcemet>
-//
-//api/cities/<id_of_city>/categories/<id_of_category>/announcements/?title=<name_of_title>
-//
-//review
 
 
 

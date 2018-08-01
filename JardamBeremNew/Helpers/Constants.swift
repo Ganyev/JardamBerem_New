@@ -17,7 +17,7 @@ struct Constants {
             static func category(by id: Int) -> String {
                 return "api/cities/\(id)/categories/"
             }
-            
+            static let forum = "forum"
         }
         
         struct ErrorMessage {
