@@ -9,6 +9,8 @@
 import UIKit
 
 class TermsViewController: UIViewController {
+    @IBOutlet weak var termsView: UITextView!
+    @IBOutlet weak var termLbl:UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

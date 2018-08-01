@@ -18,46 +18,199 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hpt-gm-cf7">
-                                <rect key="frame" x="67" y="81" width="257" height="336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hpt-gm-cf7">
+                                <rect key="frame" x="20" y="60" width="335" height="434"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">               Правила и условия 
+1. Организатором акции «UNIQLO AIRism sampling» (далее – «Акция») является Общество с ограниченной ответственностью «ЮНИКЛО (РУС)». Юридический адрес: 105064, г. Москва, ул. Земляной вал, д. 9 (далее – «Организатор»). Цель проведения Акции – привлечение внимания, поддержание и повышение интереса потребителей к товарам, выпускаемым под товарным знаком «UNIQLO».
+ 
+2. В Акции могут принимать участие дееспособные граждане Российской Федерации, постоянно проживающие на территории Российской Федерации в городе Ростов-на-Дону и Ростовской области, Нижний Новгород и Нижегородской области, Казань и Республики Татарстан и достигшие 18 лет, за исключением сотрудников Организатора, аффилированных с ним компаний и привлеченных к проведению Акции агентств, а также членов их семей.
+ 
+3. Сроки проведения Акции:
+3.1. Акция проводится: 28 июля 2018 года с 12:00 до 22:00 включительно (далее – Период проведения Акции).
+3.2. Вручение призов участникам Акции осуществляется: 28 июля 2018 года с 12:00 до 22:00 включительно.
+ 
+4. Условия участия в Акции:
+4.1. Для того чтобы принять участие в Акции, необходимо в период, указанный в п.3.1, выполнить все следующие условия:
+1) Подойти к стенду UNIQLO AIRism в одном из магазинов UNIQLO. Магазины UNIQLO расположены по следующим адресам: Ростовская область, Аксайский район, г. Аксай, проспект Аксайский, 23, ТЦ «МЕГА Ростов-на-Дону»; г. Ростов-на-Дону проспект им. М. Нагибина, 32/2, ТРК «Горизонт», г. Нижний Новгород, ул. Родионова, 187В, литер Е, ТРК «Фантастика», Нижегородская область, Кстовский район, д. Федяково, ТЦ «МЕГА Нижний Новгород», Респ. Татарстан, г. Казань, Проспект Победы, ТЦ «МЕГА Казань».
+2) Получить у промоутера флаер и заполнить следующую информацию: Ф.И.О, пол, город, e-mail и согласиться на обработку персональных данных, а также получение новостной рассылки.
+3) После выполнения условий Акции выше, Участник может  получить порцию мороженого (одна порция мороженого выдается одному участнику Акции);
+4) Прийти с флаером в магазин UNIQLO, где Участник заполнял анкету, и отдать его консультанту на кассе.
+5) Взамен флаера консультант магазина выдает изделие AIRism. Выбор артикула, цвета, размера изделия AIRism возможен участником при условии наличия такого товара на данный момент в магазине UNIQLO. При этом количество товаров AIRism по артикулам, размерам и цветам ограничено.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3c-6N-6Lt">
-                                <rect key="frame" x="64" y="433" width="118" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ознакомлен и согласен с условиями и правилами" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZk-Ll-hQq">
+                                <rect key="frame" x="81" y="502" width="274" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="AhI-ba-u13"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3c-6N-6Lt">
+                                <rect key="frame" x="20" y="514" width="41" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HRw-Bi-E2v"/>
+                                    <constraint firstAttribute="width" constant="41" id="YR9-gM-Ybk"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="unchecked"/>
                                 <state key="selected" image="checked"/>
                                 <connections>
-                                    <action selector="checkBoxTappedWith_sender:" destination="ExD-wD-wde" eventType="touchUpInside" id="lbi-fv-XKw"/>
+                                    <action selector="checkBoxTapped:" destination="ExD-wD-wde" eventType="touchUpInside" id="xbr-hR-vWu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhl-0M-hgw">
+                                <rect key="frame" x="327" y="628" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="nPQ-iV-ryP" kind="show" id="cLh-B1-RO1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8A9-ag-AA7" firstAttribute="trailing" secondItem="lZk-Ll-hQq" secondAttribute="trailing" constant="20" id="2wG-Kq-JEw"/>
+                            <constraint firstItem="hpt-gm-cf7" firstAttribute="top" secondItem="8A9-ag-AA7" secondAttribute="top" constant="40" id="3Wh-v3-wsh"/>
+                            <constraint firstItem="lZk-Ll-hQq" firstAttribute="top" secondItem="hpt-gm-cf7" secondAttribute="bottom" constant="8" symbolic="YES" id="BPR-wu-7eQ"/>
+                            <constraint firstItem="hpt-gm-cf7" firstAttribute="leading" secondItem="8A9-ag-AA7" secondAttribute="leading" constant="20" id="CPY-7B-b2U"/>
+                            <constraint firstItem="lZk-Ll-hQq" firstAttribute="leading" secondItem="L3c-6N-6Lt" secondAttribute="trailing" constant="20" id="Nhl-0x-WSY"/>
+                            <constraint firstItem="8A9-ag-AA7" firstAttribute="trailing" secondItem="hpt-gm-cf7" secondAttribute="trailing" constant="20" id="flN-Y0-owx"/>
+                            <constraint firstItem="L3c-6N-6Lt" firstAttribute="leading" secondItem="8A9-ag-AA7" secondAttribute="leading" constant="20" id="r8Y-3z-VjV"/>
+                            <constraint firstItem="L3c-6N-6Lt" firstAttribute="top" secondItem="hpt-gm-cf7" secondAttribute="bottom" constant="20" id="uJe-S6-Jfk"/>
+                            <constraint firstItem="8A9-ag-AA7" firstAttribute="bottom" secondItem="lZk-Ll-hQq" secondAttribute="bottom" constant="92" id="zs6-Ga-lNm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8A9-ag-AA7"/>
                     </view>
+                    <connections>
+                        <outlet property="termLbl" destination="lZk-Ll-hQq" id="XFY-wo-F46"/>
+                        <outlet property="termsView" destination="hpt-gm-cf7" id="h4h-xI-ubw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKl-Eg-EUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="116"/>
+            <point key="canvasLocation" x="-818" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Lang View Controller-->
+        <scene sceneID="hcd-6y-qmT">
+            <objects>
+                <viewController id="nPQ-iV-ryP" customClass="LangViewController" customModule="JardamBeremNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8J-4h-b5k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Язык" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-h8-FbL">
+                                <rect key="frame" x="162" y="60" width="51.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLg-91-WCq">
+                                <rect key="frame" x="28" y="226" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nPQ-iV-ryP" id="GN2-MJ-c3b"/>
+                                    <outlet property="delegate" destination="nPQ-iV-ryP" id="0o6-WA-u4y"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nn9-Eb-TZ1">
+                                <rect key="frame" x="129" y="522" width="116" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.32886728927428033" blue="0.35220444398854966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="QtG-OT-dmy"/>
+                                    <constraint firstAttribute="width" constant="116" id="lAk-DZ-wZ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Готово">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="readyButton" destination="nPQ-iV-ryP" eventType="touchUpInside" id="176-ke-Ncx"/>
+                                    <segue destination="zc2-T2-2jB" kind="show" id="VER-yD-ppo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jDz-h8-FbL" firstAttribute="top" secondItem="HiC-Xd-TRA" secondAttribute="top" constant="40" id="4qo-XZ-m57"/>
+                            <constraint firstItem="nn9-Eb-TZ1" firstAttribute="centerX" secondItem="k8J-4h-b5k" secondAttribute="centerX" id="GWe-1f-D0E"/>
+                            <constraint firstItem="BLg-91-WCq" firstAttribute="centerX" secondItem="k8J-4h-b5k" secondAttribute="centerX" id="JVx-mT-tKe"/>
+                            <constraint firstItem="nn9-Eb-TZ1" firstAttribute="top" secondItem="BLg-91-WCq" secondAttribute="bottom" constant="80" id="hOi-Cu-ZFY"/>
+                            <constraint firstItem="BLg-91-WCq" firstAttribute="centerY" secondItem="k8J-4h-b5k" secondAttribute="centerY" id="rDh-7B-Vzr"/>
+                            <constraint firstItem="jDz-h8-FbL" firstAttribute="centerX" secondItem="k8J-4h-b5k" secondAttribute="centerX" id="wXv-KR-NrT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HiC-Xd-TRA"/>
+                    </view>
+                    <connections>
+                        <outlet property="langLabel" destination="jDz-h8-FbL" id="k8R-ND-Iw8"/>
+                        <outlet property="pickerView" destination="BLg-91-WCq" id="5a5-KD-PeP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jg2-PS-K3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="96"/>
+        </scene>
+        <!--Cities View Controller-->
         <scene sceneID="qqj-qf-JTm">
             <objects>
-                <viewController id="zc2-T2-2jB" sceneMemberID="viewController">
+                <viewController id="zc2-T2-2jB" customClass="CitiesViewController" customModule="JardamBeremNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r1b-nl-j17">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qza-7M-g0L">
+                                <rect key="frame" x="129" y="521.5" width="116" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.32886728929999998" blue="0.35220444400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="w4D-Qy-1oK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Готово">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="readyButton" destination="zc2-T2-2jB" eventType="touchUpInside" id="YTI-3K-4Va"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регион" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d6-6R-Wvy">
+                                <rect key="frame" x="152" y="60" width="71" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-Ht-z0x">
+                                <rect key="frame" x="28" y="226" width="320" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="6P7-yV-KOo"/>
+                                    <constraint firstAttribute="height" constant="216" id="fGE-aT-BeK"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="zc2-T2-2jB" id="i5e-Jh-K7y"/>
+                                    <outlet property="delegate" destination="zc2-T2-2jB" id="fOe-PH-Y0v"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3jY-Ht-z0x" firstAttribute="centerX" secondItem="r1b-nl-j17" secondAttribute="centerX" id="0NS-20-6Be"/>
+                            <constraint firstItem="6d6-6R-Wvy" firstAttribute="centerX" secondItem="r1b-nl-j17" secondAttribute="centerX" id="72H-eP-htH"/>
+                            <constraint firstItem="3jY-Ht-z0x" firstAttribute="centerY" secondItem="r1b-nl-j17" secondAttribute="centerY" id="DDq-9y-h6Q"/>
+                            <constraint firstItem="Qza-7M-g0L" firstAttribute="centerX" secondItem="r1b-nl-j17" secondAttribute="centerX" id="Iod-uS-wUZ"/>
+                            <constraint firstItem="Qza-7M-g0L" firstAttribute="top" secondItem="3jY-Ht-z0x" secondAttribute="bottom" constant="80" id="hBl-7q-K6I"/>
+                            <constraint firstItem="6d6-6R-Wvy" firstAttribute="top" secondItem="m8s-Aa-Vua" secondAttribute="top" constant="40" id="sRZ-Ze-H6F"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m8s-Aa-Vua"/>
                     </view>
+                    <connections>
+                        <outlet property="regionLbl" destination="6d6-6R-Wvy" id="K2R-W3-ZlT"/>
+                        <outlet property="regionPickerView" destination="3jY-Ht-z0x" id="5b4-PD-2TS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K50-L1-ZC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="122"/>
+            <point key="canvasLocation" x="814" y="96"/>
         </scene>
     </scenes>
     <resources>
