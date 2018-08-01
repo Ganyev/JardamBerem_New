@@ -31,6 +31,7 @@
 		94BE9D66211238A2001FC8C6 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D65211238A2001FC8C6 /* CategoriesCell.swift */; };
 		94BE9D6821125DDE001FC8C6 /* LangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6721125DDC001FC8C6 /* LangViewController.swift */; };
 		94BE9D6A21125DE7001FC8C6 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6921125DE7001FC8C6 /* CitiesViewController.swift */; };
+		94BE9D6C21126167001FC8C6 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6B21126167001FC8C6 /* Announcement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		94BE9D65211238A2001FC8C6 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		94BE9D6721125DDC001FC8C6 /* LangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangViewController.swift; sourceTree = "<group>"; };
 		94BE9D6921125DE7001FC8C6 /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		94BE9D6B21126167001FC8C6 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 				94BE9D48211204CF001FC8C6 /* Categories.swift */,
 				94BE9D4A2112085A001FC8C6 /* Reviews.swift */,
 				94BE9D4C21121069001FC8C6 /* Forum.swift */,
+				94BE9D6B21126167001FC8C6 /* Announcement.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				940F58D32111F82200F9668F /* AppDelegate.swift in Sources */,
 				94BE9D6221121FA2001FC8C6 /* MainCollectionViewCell.swift in Sources */,
 				94BE9D47211204B8001FC8C6 /* Cities.swift in Sources */,
+				94BE9D6C21126167001FC8C6 /* Announcement.swift in Sources */,
 				94BE9D6021121F66001FC8C6 /* PinterestLayout.swift in Sources */,
 				94BE9D4B2112085A001FC8C6 /* Reviews.swift in Sources */,
 				94BE9D3F2111FF58001FC8C6 /* HTTPRequestManager.swift in Sources */,

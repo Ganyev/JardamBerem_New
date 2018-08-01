@@ -90,7 +90,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eEy-Zw-w70">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flickr" translatesAutoresizingMaskIntoConstraints="NO" id="eEy-Zw-w70">
                                                     <rect key="frame" x="5" y="12" width="27" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="E5b-ik-NPI"/>
@@ -134,4 +134,7 @@
             <point key="canvasLocation" x="-114.40000000000001" y="169.56521739130437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="flickr" width="256" height="256"/>
+    </resources>
 </document>
