@@ -64,6 +64,29 @@
                                     <outlet property="delegate" destination="Mh7-gS-7Ff" id="dH8-3l-5ab"/>
                                 </connections>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-QQ-sTX">
+                                <rect key="frame" x="0.0" y="70" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="N9C-93-ANE"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9dL-Lo-ngg">
+                                    <size key="itemSize" width="104" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3jF-Ly-TP8">
+                                        <rect key="frame" x="0.0" y="5" width="104" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="104" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -71,10 +94,14 @@
                             <constraint firstItem="U4N-u7-5r6" firstAttribute="height" secondItem="3Dt-mx-ktw" secondAttribute="height" multiplier="1:2" id="PQq-fg-SAr"/>
                             <constraint firstItem="U4N-u7-5r6" firstAttribute="trailing" secondItem="NPH-o0-RgO" secondAttribute="trailing" id="VMg-JF-Xeh"/>
                             <constraint firstItem="U4N-u7-5r6" firstAttribute="bottom" secondItem="NPH-o0-RgO" secondAttribute="bottom" id="Vad-kz-yRV"/>
+                            <constraint firstItem="WD6-QQ-sTX" firstAttribute="leading" secondItem="NPH-o0-RgO" secondAttribute="leading" id="izG-Jk-tef"/>
+                            <constraint firstItem="WD6-QQ-sTX" firstAttribute="top" secondItem="NPH-o0-RgO" secondAttribute="top" constant="50" id="osH-nU-Kka"/>
+                            <constraint firstItem="WD6-QQ-sTX" firstAttribute="trailing" secondItem="NPH-o0-RgO" secondAttribute="trailing" id="rQj-mJ-i9q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NPH-o0-RgO"/>
                     </view>
                     <connections>
+                        <outlet property="categoriesCollectionView" destination="WD6-QQ-sTX" id="hbR-Og-pgY"/>
                         <outlet property="collectionView" destination="U4N-u7-5r6" id="TpK-hj-d1c"/>
                     </connections>
                 </viewController>

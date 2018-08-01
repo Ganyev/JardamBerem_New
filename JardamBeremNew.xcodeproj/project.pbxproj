@@ -28,6 +28,7 @@
 		94BE9D6021121F66001FC8C6 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5F21121F66001FC8C6 /* PinterestLayout.swift */; };
 		94BE9D6221121FA2001FC8C6 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6121121FA2001FC8C6 /* MainCollectionViewCell.swift */; };
 		94BE9D64211228BC001FC8C6 /* MenuEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D63211228BC001FC8C6 /* MenuEnum.swift */; };
+		94BE9D66211238A2001FC8C6 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D65211238A2001FC8C6 /* CategoriesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		94BE9D5F21121F66001FC8C6 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		94BE9D6121121FA2001FC8C6 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		94BE9D63211228BC001FC8C6 /* MenuEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEnum.swift; sourceTree = "<group>"; };
+		94BE9D65211238A2001FC8C6 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -177,6 +179,7 @@
 			children = (
 				94BE9D5F21121F66001FC8C6 /* PinterestLayout.swift */,
 				94BE9D6121121FA2001FC8C6 /* MainCollectionViewCell.swift */,
+				94BE9D65211238A2001FC8C6 /* CategoriesCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				94BE9D49211204CF001FC8C6 /* Categories.swift in Sources */,
 				94BE9D64211228BC001FC8C6 /* MenuEnum.swift in Sources */,
 				94BE9D5D21121CAA001FC8C6 /* MainViewController.swift in Sources */,
+				94BE9D66211238A2001FC8C6 /* CategoriesCell.swift in Sources */,
 				94BE9D3E2111FF58001FC8C6 /* HTTPStatusCode.swift in Sources */,
 				94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */,
 				940F58D32111F82200F9668F /* AppDelegate.swift in Sources */,
