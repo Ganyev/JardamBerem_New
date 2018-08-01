@@ -8,46 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var mainMenuArray = ["Главный экран"]
+
+    var menuArray: [MenuEnum] = [.main, .terms]
     
     @IBOutlet weak var mainTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTableView.dataSource = self
-//        ServerManager.shared.getCities(completion: printCities) { (error) in
-//            print(error)
-//        }
-//        ServerManager.shared.getCategories(id: 1, completion: printCategories) { (error) in
-//            print(error)
-//        }
-//        ServerManager.shared.getReviews(completion: printReviews) { (error) in
-//            print(error)
-//        }
-//        ServerManager.shared.getForum(completion: printForum) { (error) in
-//            print(error)
-//        }
+        mainTableView.delegate = self
         
     
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainMenuArray.count
+        return menuArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = mainMenuArray[indexPath.row]
+        cell.textLabel!.text = menuArray[indexPath.row].rawValue
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let storyboard = UIStoryboard.init(name: "Baha", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "mainvc") as! MainViewController
-//        mainMenuArray[0] =
-//        self.show(vc, sender: self)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = menuArray[indexPath.row].getController()
+        self.show(vc, sender: self)
+    
+    }
+    
+
 
 
 }

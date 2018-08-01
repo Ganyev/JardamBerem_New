@@ -13,7 +13,7 @@
         <!--Terms View Controller-->
         <scene sceneID="aYG-B9-KbN">
             <objects>
-                <viewController id="ExD-wD-wde" customClass="TermsViewController" customModule="JardamBeremNew" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="termsvc" id="ExD-wD-wde" customClass="TermsViewController" customModule="JardamBeremNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3O8-FG-lUY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
