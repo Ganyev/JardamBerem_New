@@ -47,6 +47,23 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
+    func getAnnouncements(id: Int, categoryid: Int, completion: @escaping ([Announcement]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.announcement(by: id, by: categoryid), completion: { (data) in
+            
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(AnnouncementResults.self, from: data)
+                completion(result.results)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
+    
     func getReviews(completion: @escaping ([Review]) -> (), error: @escaping (String) -> ()) {
         self.get(endpoint: Constants.Network.EndPoint.reviews, completion: { (data) in
             //TODO

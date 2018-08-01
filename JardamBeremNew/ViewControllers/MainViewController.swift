@@ -16,6 +16,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
     var categoriesArray: [Category] = []
+    var announcementArray: [Announcement] = []
     
     //MARK: Properties
 
@@ -24,6 +25,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         categoriesCollectionView.dataSource = self
         
         ServerManager.shared.getCategories(id: 1, completion: setCategories, error: printError)
+        ServerManager.shared.getAnnouncements(id: 1, categoryid: 1, completion: setAnnouncements, error: printError)
     }
     
     func printError(error: String) {
@@ -35,11 +37,16 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         self.categoriesCollectionView.reloadData()
     }
     
+    func setAnnouncements(announcements: [Announcement]) {
+        announcementArray = announcements
+        self.collectionView.reloadData()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.categoriesCollectionView {
             return categoriesArray.count
         }
-        return 0
+        return announcementArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -47,8 +54,15 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categorycell", for: indexPath) as! CategoriesCell
         cell.nameLabel.text = categoriesArray[indexPath.row].category_name
             return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photocell", for: indexPath) as!
+            MainCollectionViewCell
+            cell.nameLabel.text = announcementArray[indexPath.row].title
+            
+            return cell
+            
         }
-        return UICollectionViewCell()
+        
         
     }
 }

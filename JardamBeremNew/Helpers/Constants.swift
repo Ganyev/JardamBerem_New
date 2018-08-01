@@ -18,6 +18,10 @@ struct Constants {
                 return "api/cities/\(id)/categories/"
             }
             static let forum = "forum"
+            //api/cities/<id_of_city>/categories/<id_of_category>/announcements
+            static func announcement(by id: Int, by categoryid: Int) -> String {
+                return "api/cities/\(id)/categories/\(categoryid)/announcements"
+            }
         }
         
         struct ErrorMessage {
