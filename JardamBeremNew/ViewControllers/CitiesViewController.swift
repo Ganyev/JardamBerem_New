@@ -1,5 +1,5 @@
 //
-//  TermsViewController.swift
+//  CitiesViewController.swift
 //  JardamBeremNew
 //
 //  Created by Ramilia Imankulova on 8/1/18.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-class TermsViewController: UIViewController {
-    @IBOutlet weak var termsView: UITextView!
-    @IBOutlet weak var termLbl:UILabel!
+class CitiesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +22,14 @@ class TermsViewController: UIViewController {
     }
     
 
-    @IBAction func checkBoxTapped(_ sender:UIButton){
-        if sender.isSelected {
-            sender.isSelected = false
-        } else {
-            sender.isSelected = true
-        }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
 
 }
