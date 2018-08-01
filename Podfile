@@ -7,5 +7,5 @@ target 'JardamBeremNew' do
 
   # Pods for JardamBeremNew
   pod 'Alamofire', '~> 4.7'
-
+ 
 end
