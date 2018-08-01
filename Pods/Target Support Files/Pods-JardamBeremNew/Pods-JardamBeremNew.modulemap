@@ -1,0 +1,6 @@
+framework module Pods_JardamBeremNew {
+  umbrella header "Pods-JardamBeremNew-umbrella.h"
+
+  export *
+  module * { export * }
+}
