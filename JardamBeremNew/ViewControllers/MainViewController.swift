@@ -50,9 +50,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         }
         return UICollectionViewCell()
         
-        
-        
-        
     }
 }
 
