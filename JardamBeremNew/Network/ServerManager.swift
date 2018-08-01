@@ -29,26 +29,10 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
-    func getCategories(completion: @escaping ([Category]) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: Constants.Network.EndPoint.categories, completion: { (data) in
-            //TODO
-            do {
-                guard let  data = data else { return }
-                let result = try JSONDecoder().decode(CategoryResult.self, from: data)
-                completion(result.results)
-            }
-            catch let errorMessage {
-                error(errorMessage.localizedDescription)
-            }
-            
-        }) { (errorMessage) in
-            error(errorMessage)
-        }
-    }
     
-    func getCategories(id_of_city: String, completion: @escaping ([Category]) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: "\(Constants.Network.EndPoint.categories)/(id_of_city)/categories", completion: { (data) in
-            //TODO
+    func getCategories(id: Int, completion: @escaping ([Category]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.category(by: id), completion: { (data) in
+  
             do {
                 guard let  data = data else { return }
                 let result = try JSONDecoder().decode(CategoryResult.self, from: data)
