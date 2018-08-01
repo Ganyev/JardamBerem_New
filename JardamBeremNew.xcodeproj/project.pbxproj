@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7A3A87D9AC7EADBE17BA21F2 /* Pods_JardamBeremNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */; };
 		940F58D32111F82200F9668F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F58D22111F82200F9668F /* AppDelegate.swift */; };
-		940F58D52111F82200F9668F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F58D42111F82200F9668F /* ViewController.swift */; };
 		940F58D82111F82200F9668F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940F58D62111F82200F9668F /* Main.storyboard */; };
 		940F58DA2111F82300F9668F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940F58D92111F82300F9668F /* Assets.xcassets */; };
 		940F58DD2111F82300F9668F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940F58DB2111F82300F9668F /* LaunchScreen.storyboard */; };
@@ -21,13 +20,14 @@
 		94BE9D49211204CF001FC8C6 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D48211204CF001FC8C6 /* Categories.swift */; };
 		94BE9D4B2112085A001FC8C6 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D4A2112085A001FC8C6 /* Reviews.swift */; };
 		94BE9D4D21121069001FC8C6 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D4C21121069001FC8C6 /* Forum.swift */; };
+		94BE9D51211219C6001FC8C6 /* Ramilias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BE9D4F211219C3001FC8C6 /* Ramilias.storyboard */; };
+		94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5521121A4D001FC8C6 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		368A70E5DF3232DDD435B9C3 /* Pods-JardamBeremNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.release.xcconfig"; sourceTree = "<group>"; };
 		940F58CF2111F82200F9668F /* JardamBeremNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JardamBeremNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940F58D22111F82200F9668F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		940F58D42111F82200F9668F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		940F58D72111F82200F9668F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		940F58D92111F82300F9668F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940F58DC2111F82300F9668F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		94BE9D48211204CF001FC8C6 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		94BE9D4A2112085A001FC8C6 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		94BE9D4C21121069001FC8C6 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		94BE9D50211219C3001FC8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Ramilias.storyboard; sourceTree = "<group>"; };
+		94BE9D5521121A4D001FC8C6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,12 +96,12 @@
 		940F58D12111F82200F9668F /* JardamBeremNew */ = {
 			isa = PBXGroup;
 			children = (
+				94BE9D5221121A0D001FC8C6 /* ViewControllers */,
 				94BE9D4E2112159F001FC8C6 /* Storyboards */,
 				94BE9D442112047D001FC8C6 /* Models */,
 				94BE9D41211203E2001FC8C6 /* Helpers */,
 				94BE9D3A2111FF41001FC8C6 /* Network */,
 				940F58D22111F82200F9668F /* AppDelegate.swift */,
-				940F58D42111F82200F9668F /* ViewController.swift */,
 				940F58D92111F82300F9668F /* Assets.xcassets */,
 				940F58DB2111F82300F9668F /* LaunchScreen.storyboard */,
 				940F58DE2111F82300F9668F /* Info.plist */,
@@ -139,10 +141,18 @@
 		94BE9D4E2112159F001FC8C6 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				94BE9D4F211219C3001FC8C6 /* Ramilias.storyboard */,
 				940F58D62111F82200F9668F /* Main.storyboard */,
 			);
-			name = Storyboards;
-			path = Storyboard;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		94BE9D5221121A0D001FC8C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				94BE9D5521121A4D001FC8C6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BE9D51211219C6001FC8C6 /* Ramilias.storyboard in Resources */,
 				940F58DD2111F82300F9668F /* LaunchScreen.storyboard in Resources */,
 				940F58DA2111F82300F9668F /* Assets.xcassets in Resources */,
 				940F58D82111F82200F9668F /* Main.storyboard in Resources */,
@@ -260,7 +271,7 @@
 				94BE9D402111FF58001FC8C6 /* ServerManager.swift in Sources */,
 				94BE9D49211204CF001FC8C6 /* Categories.swift in Sources */,
 				94BE9D3E2111FF58001FC8C6 /* HTTPStatusCode.swift in Sources */,
-				940F58D52111F82200F9668F /* ViewController.swift in Sources */,
+				94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */,
 				940F58D32111F82200F9668F /* AppDelegate.swift in Sources */,
 				94BE9D47211204B8001FC8C6 /* Cities.swift in Sources */,
 				94BE9D4B2112085A001FC8C6 /* Reviews.swift in Sources */,
@@ -279,7 +290,6 @@
 				940F58D72111F82200F9668F /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../Storyboards;
 			sourceTree = "<group>";
 		};
 		940F58DB2111F82300F9668F /* LaunchScreen.storyboard */ = {
@@ -288,6 +298,14 @@
 				940F58DC2111F82300F9668F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94BE9D4F211219C3001FC8C6 /* Ramilias.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94BE9D50211219C3001FC8C6 /* Base */,
+			);
+			name = Ramilias.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
