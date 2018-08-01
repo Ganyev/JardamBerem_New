@@ -23,6 +23,7 @@
 		94BE9D51211219C6001FC8C6 /* Ramilias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BE9D4F211219C3001FC8C6 /* Ramilias.storyboard */; };
 		94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5521121A4D001FC8C6 /* ViewController.swift */; };
 		94BE9D5821121AFF001FC8C6 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D5721121AFF001FC8C6 /* TermsViewController.swift */; };
+		94BE9D5B21121B64001FC8C6 /* Baha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BE9D5921121B64001FC8C6 /* Baha.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		94BE9D50211219C3001FC8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Ramilias.storyboard; sourceTree = "<group>"; };
 		94BE9D5521121A4D001FC8C6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94BE9D5721121AFF001FC8C6 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		94BE9D5A21121B64001FC8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Baha.storyboard; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 			children = (
 				94BE9D4F211219C3001FC8C6 /* Ramilias.storyboard */,
 				940F58D62111F82200F9668F /* Main.storyboard */,
+				94BE9D5921121B64001FC8C6 /* Baha.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				94BE9D51211219C6001FC8C6 /* Ramilias.storyboard in Resources */,
 				940F58DD2111F82300F9668F /* LaunchScreen.storyboard in Resources */,
 				940F58DA2111F82300F9668F /* Assets.xcassets in Resources */,
+				94BE9D5B21121B64001FC8C6 /* Baha.storyboard in Resources */,
 				940F58D82111F82200F9668F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +314,14 @@
 				94BE9D50211219C3001FC8C6 /* Base */,
 			);
 			name = Ramilias.storyboard;
+			sourceTree = "<group>";
+		};
+		94BE9D5921121B64001FC8C6 /* Baha.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94BE9D5A21121B64001FC8C6 /* Base */,
+			);
+			name = Baha.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
