@@ -81,5 +81,12 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let selectedId = categoriesArray[indexPath.item].id
+        ServerManager.shared.getAnnouncements(categoryid: selectedId!, completion: setAnnouncements, error: printError)
+        self.collectionView.reloadData()
+    }
+    
 }
 
