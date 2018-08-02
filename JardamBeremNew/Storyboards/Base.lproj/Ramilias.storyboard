@@ -233,6 +233,14 @@
                                     <action selector="addPicture1:" destination="fod-AL-DDt" eventType="touchUpInside" id="g7g-1D-Dvk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9r7-AM-cCB">
+                                <rect key="frame" x="87" y="563" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="V5e-Oe-Rt6" kind="show" id="yn7-o9-9Of"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wJL-aT-ygm"/>
@@ -243,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7w4-yi-ekC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770.4000000000001" y="9.4452773613193415"/>
+            <point key="canvasLocation" x="1934" y="-64"/>
         </scene>
         <!--Charity Events View Controller-->
         <scene sceneID="PxL-Tt-qhP">
@@ -257,7 +265,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="227" id="rWr-E8-od7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCharity" rowHeight="227" id="rWr-E8-od7" customClass="CharityTableViewCell" customModule="JardamBeremNew" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="227"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rWr-E8-od7" id="NA6-ZQ-ZnS">
@@ -268,7 +276,7 @@
                                                     <rect key="frame" x="0.0" y="-11" width="375" height="166"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcn-sA-qg9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcn-sA-qg9">
                                                     <rect key="frame" x="110" y="181" width="133" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -277,8 +285,16 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="charityImageView" destination="cXh-mV-oH6" id="GrS-1Q-l9T"/>
+                                            <outlet property="titleCharity" destination="Hcn-sA-qg9" id="4r8-X9-qz7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="V5e-Oe-Rt6" id="6ST-Co-ekf"/>
+                                    <outlet property="delegate" destination="V5e-Oe-Rt6" id="UwV-wF-Tnz"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -290,10 +306,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oz3-nN-4y3"/>
                     </view>
+                    <connections>
+                        <outlet property="charityTableView" destination="q75-jJ-fhx" id="maI-Ce-GI9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6P-ZH-RdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429.5999999999999" y="3.1484257871064472"/>
+            <point key="canvasLocation" x="2695" y="-15"/>
         </scene>
     </scenes>
     <resources>
