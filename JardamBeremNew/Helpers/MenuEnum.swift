@@ -12,6 +12,7 @@ import UIKit
 enum MenuEnum: String {
     case main = "Главный экран"
     case terms = "Политика конфиденциальности"
+    case forum = "Форум"
     
     func getController() -> UIViewController {
         switch self {
@@ -23,6 +24,11 @@ enum MenuEnum: String {
         case .terms:
             let storyboard = UIStoryboard.init(name: "Ramilias", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "termsvc")
+            return vc
+            
+        case .forum:
+            let storyboard = UIStoryboard.init(name: "Baha", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "forumvc")
             return vc
             
         }

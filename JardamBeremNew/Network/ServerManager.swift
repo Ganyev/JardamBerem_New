@@ -30,8 +30,8 @@ class ServerManager: HTTPRequestManager {
     }
     
     
-    func getCategories(id: Int, completion: @escaping ([Category]) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: Constants.Network.EndPoint.category(by: id), completion: { (data) in
+    func getCategories(completion: @escaping ([Category]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.categories, completion: { (data) in
   
             do {
                 guard let  data = data else { return }
@@ -47,8 +47,8 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
-    func getAnnouncements(id: Int, categoryid: Int, completion: @escaping ([Announcement]) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: Constants.Network.EndPoint.announcement(by: id, by: categoryid), completion: { (data) in
+    func getAnnouncements(categoryid: Int, completion: @escaping ([Announcement]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.announcement(by: categoryid), completion: { (data) in
             
             do {
                 guard let  data = data else { return }
