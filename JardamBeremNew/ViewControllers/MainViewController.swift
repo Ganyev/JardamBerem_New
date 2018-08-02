@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UICollectionViewDataSource {
+class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     //MARK: Outlets
     
@@ -26,6 +26,10 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         
         ServerManager.shared.getCategories(id: 1, completion: setCategories, error: printError)
         ServerManager.shared.getAnnouncements(id: 1, categoryid: 1, completion: setAnnouncements, error: printError)
+        if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
+            layout.delegate = self as! PinterestLayoutDelegate
+        }
+        collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     
     func printError(error: String) {
@@ -52,12 +56,12 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == self.categoriesCollectionView {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categorycell", for: indexPath) as! CategoriesCell
-        cell.nameLabel.text = categoriesArray[indexPath.row].category_name
+        cell.setCategory(cat: categoriesArray[indexPath.item])
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photocell", for: indexPath) as!
             MainCollectionViewCell
-            cell.nameLabel.text = announcementArray[indexPath.row].title
+            cell.setAnnouns(main: announcementArray[indexPath.item])
             
             return cell
             
@@ -65,5 +69,22 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = (collectionView.frame.width - 30) / 2
+        guard let imageWidth = announcementArray[indexPath.row].imgPath_width, let imageHeight = announcementArray[indexPath.row].imgPath_height else {
+            return CGSize(width: cellWidth, height: cellWidth)
+        }
+        guard imageWidth != 0 && imageHeight != 0 else {
+            return CGSize(width: cellWidth, height: cellWidth)
+        }
+        let cellHeight = (Int(cellWidth) * imageHeight) / imageWidth
+        let size = CGSize(width: Int(cellWidth), height: cellHeight)
+        
+        return size
+    
+    }
+    
+    
 }
 

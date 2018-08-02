@@ -6,7 +6,7 @@
 //  Copyright © 2018 Baha Ganyev. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 protocol PinterestLayoutDelegate: class {

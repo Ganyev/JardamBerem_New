@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,9 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U4N-u7-5r6">
-                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewLayout key="collectionViewLayout" id="Y1d-E9-QSn" customClass="PinterestLayout" customModule="JardamBeremNew" customModuleProvider="target"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oIf-el-FIE">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photocell" id="UdE-Lq-qDQ" customClass="MainCollectionViewCell" customModule="JardamBeremNew" customModuleProvider="target">
                                         <rect key="frame" x="44" y="0.0" width="287" height="260"/>
@@ -32,10 +36,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2O-Kf-b1S">
-                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="247"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="260"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZy-GM-tlF">
-                                                    <rect key="frame" x="0.0" y="247" width="287" height="13"/>
+                                                    <rect key="frame" x="0.0" y="230" width="287" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.13781571061643835" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="NhD-mY-AOY"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -44,12 +52,11 @@
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="pZy-GM-tlF" secondAttribute="trailing" id="2fI-tY-SNY"/>
-                                            <constraint firstItem="N2O-Kf-b1S" firstAttribute="height" secondItem="UdE-Lq-qDQ" secondAttribute="height" multiplier="0.95" id="J9y-y3-RZH"/>
                                             <constraint firstAttribute="trailing" secondItem="N2O-Kf-b1S" secondAttribute="trailing" id="Lkz-K4-rUq"/>
                                             <constraint firstItem="N2O-Kf-b1S" firstAttribute="leading" secondItem="UdE-Lq-qDQ" secondAttribute="leading" id="Vgd-eO-nBZ"/>
                                             <constraint firstItem="N2O-Kf-b1S" firstAttribute="top" secondItem="UdE-Lq-qDQ" secondAttribute="top" id="ahg-Z1-Ypf"/>
                                             <constraint firstItem="pZy-GM-tlF" firstAttribute="leading" secondItem="UdE-Lq-qDQ" secondAttribute="leading" id="gET-p3-AGw"/>
-                                            <constraint firstItem="pZy-GM-tlF" firstAttribute="top" secondItem="N2O-Kf-b1S" secondAttribute="bottom" id="mpD-he-Pv0"/>
+                                            <constraint firstAttribute="bottom" secondItem="N2O-Kf-b1S" secondAttribute="bottom" id="t0m-Fg-ewQ"/>
                                             <constraint firstAttribute="bottom" secondItem="pZy-GM-tlF" secondAttribute="bottom" id="uRm-ro-eGJ"/>
                                         </constraints>
                                         <size key="customSize" width="287" height="260"/>
@@ -115,12 +122,12 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="U4N-u7-5r6" firstAttribute="leading" secondItem="NPH-o0-RgO" secondAttribute="leading" id="9pL-UA-uJA"/>
-                            <constraint firstItem="U4N-u7-5r6" firstAttribute="height" secondItem="3Dt-mx-ktw" secondAttribute="height" multiplier="1:2" id="PQq-fg-SAr"/>
                             <constraint firstItem="U4N-u7-5r6" firstAttribute="trailing" secondItem="NPH-o0-RgO" secondAttribute="trailing" id="VMg-JF-Xeh"/>
                             <constraint firstItem="U4N-u7-5r6" firstAttribute="bottom" secondItem="NPH-o0-RgO" secondAttribute="bottom" id="Vad-kz-yRV"/>
                             <constraint firstItem="WD6-QQ-sTX" firstAttribute="leading" secondItem="NPH-o0-RgO" secondAttribute="leading" id="izG-Jk-tef"/>
                             <constraint firstItem="WD6-QQ-sTX" firstAttribute="top" secondItem="NPH-o0-RgO" secondAttribute="top" id="osH-nU-Kka"/>
                             <constraint firstItem="WD6-QQ-sTX" firstAttribute="trailing" secondItem="NPH-o0-RgO" secondAttribute="trailing" id="rQj-mJ-i9q"/>
+                            <constraint firstItem="U4N-u7-5r6" firstAttribute="top" secondItem="WD6-QQ-sTX" secondAttribute="bottom" id="s2F-rd-aAd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NPH-o0-RgO"/>
                     </view>

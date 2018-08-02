@@ -9,8 +9,12 @@
 import UIKit
 import Kingfisher
 
-
+var cat: Category?
 
 class CategoriesCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
+    
+    func setCategory(cat: Category) {
+        nameLabel.text = cat.category_name
+    }
 }

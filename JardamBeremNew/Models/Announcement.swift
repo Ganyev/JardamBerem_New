@@ -17,4 +17,6 @@ class Announcement: Decodable {
     var city: Int?
     var title: String?
     var imgPath: String?
+    var imgPath_height: Int?
+    var imgPath_width: Int?
 }
