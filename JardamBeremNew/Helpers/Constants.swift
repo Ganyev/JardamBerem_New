@@ -12,7 +12,19 @@ struct Constants {
         struct EndPoint {
             static let cities = "api/cities/"
             static let reviews = "review"
+<<<<<<< HEAD
+            static let charityEvent = "api/charity_event/"
+            
+            static func charityEventById(by id: Int) -> String {
+            ///api/charity_event/<id_of_charityEvent>
+                return "api/charity_event/\(id)"
+            }
+            static func category(by id: Int) -> String {
+                return "api/cities/\(id)/categories/"
+            }
+=======
             static let categories = "api/categories/"
+>>>>>>> 06c1edbf23078a1614544969cc9442ebf5fe800f
             static let forum = "forum"
             //api/categories/1/announcements/
             static func announcement(by categoryid: Int) -> String {
