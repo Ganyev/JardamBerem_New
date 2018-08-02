@@ -102,7 +102,7 @@ class ServerManager: HTTPRequestManager {
             //TODO
             do {
                 guard let  data = data else { return }
-                let result = try JSONDecoder().decode(CityResult.self, from: data)
+                let result = try JSONDecoder().decode(Charity.self, from: data)
                 completion(result.results)
             }
             catch let errorMessage {

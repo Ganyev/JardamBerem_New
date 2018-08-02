@@ -12,7 +12,7 @@ class Charity : Decodable {
 }
 
 class CharityEvent : Decodable {
-    var id : Int ?
+    var id : Int?
     var title : String?
     var description : String?
     var imgPath : String?
