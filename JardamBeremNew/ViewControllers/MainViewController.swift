@@ -24,7 +24,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.viewDidLoad()
         categoriesCollectionView.dataSource = self
         
-        ServerManager.shared.getCategories(id: 1, completion: setCategories, error: printError)
+        ServerManager.shared.getCategories(completion: setCategories, error: printError)
         ServerManager.shared.getAnnouncements(id: 1, categoryid: 1, completion: setAnnouncements, error: printError)
         if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
             layout.delegate = self as! PinterestLayoutDelegate

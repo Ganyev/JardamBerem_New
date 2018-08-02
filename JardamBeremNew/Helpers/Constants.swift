@@ -11,12 +11,8 @@ struct Constants {
     struct Network{
         struct EndPoint {
             static let cities = "api/cities/"
-            //static let categories = "api/cities/"
-            //api/cities/<id_of_city>/categories/
             static let reviews = "review"
-            static func category(by id: Int) -> String {
-                return "api/cities/\(id)/categories/"
-            }
+            static let categories = "api/categories/"
             static let forum = "forum"
             //api/cities/<id_of_city>/categories/<id_of_category>/announcements
             static func announcement(by id: Int, by categoryid: Int) -> String {
