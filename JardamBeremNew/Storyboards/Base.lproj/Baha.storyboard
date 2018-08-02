@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -143,17 +144,79 @@
         <!--Forum View Controller-->
         <scene sceneID="edU-fg-JXg">
             <objects>
-                <viewController id="JiU-5x-CA7" customClass="ForumViewController" customModule="JardamBeremNew" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="forumvc" id="JiU-5x-CA7" customClass="ForumViewController" customModule="JardamBeremNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4oM-wR-kI1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zrC-iP-woI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bpw-u1-IHv">
+                                    <size key="itemSize" width="291" height="101"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="forum_cell" id="5cJ-uR-QgN" customClass="ForumCollectionViewCell" customModule="JardamBeremNew" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="0.0" width="291" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="291" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7B-nx-nwT">
+                                                    <rect key="frame" x="18" y="18" width="255" height="20.5"/>
+                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-pU-2kv">
+                                                    <rect key="frame" x="18" y="48.5" width="255" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="hhh-pU-2kv" firstAttribute="leading" secondItem="5cJ-uR-QgN" secondAttribute="leadingMargin" constant="10" id="1eg-jk-Rnj"/>
+                                            <constraint firstItem="s7B-nx-nwT" firstAttribute="top" secondItem="5cJ-uR-QgN" secondAttribute="topMargin" constant="10" id="4qV-gR-bkF"/>
+                                            <constraint firstItem="s7B-nx-nwT" firstAttribute="leading" secondItem="5cJ-uR-QgN" secondAttribute="leadingMargin" constant="10" id="TYf-tx-rjv"/>
+                                            <constraint firstItem="hhh-pU-2kv" firstAttribute="top" secondItem="s7B-nx-nwT" secondAttribute="bottom" constant="10" id="rAu-5F-X7e"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="hhh-pU-2kv" secondAttribute="trailing" constant="10" id="s0F-CO-UK4"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="s7B-nx-nwT" secondAttribute="trailing" constant="10" id="vMt-rE-O1S"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="descLabel" destination="s7B-nx-nwT" id="cay-qH-w1r"/>
+                                            <outlet property="nameLabel" destination="hhh-pU-2kv" id="wAr-c3-Ea2"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="JiU-5x-CA7" id="Cg0-UP-Js1"/>
+                                    <outlet property="delegate" destination="JiU-5x-CA7" id="7te-lE-6QT"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0eU-fc-Kv1" firstAttribute="bottom" secondItem="zrC-iP-woI" secondAttribute="bottom" id="EOv-Qf-CKU"/>
+                            <constraint firstItem="zrC-iP-woI" firstAttribute="trailing" secondItem="0eU-fc-Kv1" secondAttribute="trailing" id="Knu-Ch-Xiq"/>
+                            <constraint firstItem="zrC-iP-woI" firstAttribute="leading" secondItem="0eU-fc-Kv1" secondAttribute="leading" id="X1K-L4-F5Q"/>
+                            <constraint firstItem="zrC-iP-woI" firstAttribute="top" secondItem="4oM-wR-kI1" secondAttribute="top" id="dXQ-Hx-AIA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0eU-fc-Kv1"/>
                     </view>
+                    <connections>
+                        <outlet property="forumCollectionView" destination="zrC-iP-woI" id="M6f-HX-Qqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tZ-mK-7hJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="170"/>
+            <point key="canvasLocation" x="604" y="169.56521739130437"/>
         </scene>
     </scenes>
     <resources>

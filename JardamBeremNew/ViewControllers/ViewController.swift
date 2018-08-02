@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 
-    var menuArray: [MenuEnum] = [.main, .terms]
+    var menuArray: [MenuEnum] = [.main, .terms, .forum]
     
     @IBOutlet weak var mainTableView: UITableView!
     override func viewDidLoad() {
