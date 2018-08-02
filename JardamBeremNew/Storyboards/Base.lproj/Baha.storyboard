@@ -114,6 +114,7 @@
                                             <constraint firstItem="Fko-En-SpF" firstAttribute="leading" secondItem="eEy-Zw-w70" secondAttribute="trailing" constant="10" id="hah-yo-aao"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="imageLabel" destination="eEy-Zw-w70" id="QZb-49-lFR"/>
                                             <outlet property="nameLabel" destination="Fko-En-SpF" id="ee0-Za-i16"/>
                                         </connections>
                                     </collectionViewCell>

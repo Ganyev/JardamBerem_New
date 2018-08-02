@@ -62,12 +62,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photocell", for: indexPath) as!
             MainCollectionViewCell
             cell.setAnnouns(main: announcementArray[indexPath.item])
-            
             return cell
-            
         }
-        
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -84,7 +80,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         return size
     
     }
-    
-    
+
 }
 
