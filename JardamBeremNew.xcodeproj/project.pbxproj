@@ -337,11 +337,8 @@
 				84B9AFCF21133F3200B64837 /* CharityEventsViewController.swift in Sources */,
 				94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */,
 				940F58D32111F82200F9668F /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
 				84B9AFD121133F9900B64837 /* CharityEvents.swift in Sources */,
-=======
 				9413325A21133F8B000A1215 /* ForumCollectionViewCell.swift in Sources */,
->>>>>>> 06c1edbf23078a1614544969cc9442ebf5fe800f
 				94BE9D6221121FA2001FC8C6 /* MainCollectionViewCell.swift in Sources */,
 				9413325821130615000A1215 /* ForumViewController.swift in Sources */,
 				94BE9D47211204B8001FC8C6 /* Cities.swift in Sources */,
