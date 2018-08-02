@@ -14,9 +14,9 @@ struct Constants {
             static let reviews = "review"
             static let categories = "api/categories/"
             static let forum = "forum"
-            //api/cities/<id_of_city>/categories/<id_of_category>/announcements
-            static func announcement(by id: Int, by categoryid: Int) -> String {
-                return "api/cities/\(id)/categories/\(categoryid)/announcements"
+            //api/categories/1/announcements/
+            static func announcement(by categoryid: Int) -> String {
+                return "api/categories/\(categoryid)/announcements"
             }
         }
         
