@@ -12,6 +12,7 @@
 		940F58D82111F82200F9668F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940F58D62111F82200F9668F /* Main.storyboard */; };
 		940F58DA2111F82300F9668F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940F58D92111F82300F9668F /* Assets.xcassets */; };
 		940F58DD2111F82300F9668F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940F58DB2111F82300F9668F /* LaunchScreen.storyboard */; };
+		9413325821130615000A1215 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413325721130615000A1215 /* ForumViewController.swift */; };
 		94BE9D3E2111FF58001FC8C6 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D3B2111FF58001FC8C6 /* HTTPStatusCode.swift */; };
 		94BE9D3F2111FF58001FC8C6 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D3C2111FF58001FC8C6 /* HTTPRequestManager.swift */; };
 		94BE9D402111FF58001FC8C6 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D3D2111FF58001FC8C6 /* ServerManager.swift */; };
@@ -42,6 +43,7 @@
 		940F58D92111F82300F9668F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940F58DC2111F82300F9668F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940F58DE2111F82300F9668F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9413325721130615000A1215 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		94BE9D3B2111FF58001FC8C6 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPStatusCode.swift; path = JardamBeremNew/Network/HTTPStatusCode.swift; sourceTree = SOURCE_ROOT; };
 		94BE9D3C2111FF58001FC8C6 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPRequestManager.swift; path = JardamBeremNew/Network/HTTPRequestManager.swift; sourceTree = SOURCE_ROOT; };
 		94BE9D3D2111FF58001FC8C6 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerManager.swift; path = JardamBeremNew/Network/ServerManager.swift; sourceTree = SOURCE_ROOT; };
@@ -179,6 +181,7 @@
 				94BE9D5C21121CAA001FC8C6 /* MainViewController.swift */,
 				94BE9D6721125DDC001FC8C6 /* LangViewController.swift */,
 				94BE9D6921125DE7001FC8C6 /* CitiesViewController.swift */,
+				9413325721130615000A1215 /* ForumViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				94BE9D5621121A4E001FC8C6 /* ViewController.swift in Sources */,
 				940F58D32111F82200F9668F /* AppDelegate.swift in Sources */,
 				94BE9D6221121FA2001FC8C6 /* MainCollectionViewCell.swift in Sources */,
+				9413325821130615000A1215 /* ForumViewController.swift in Sources */,
 				94BE9D47211204B8001FC8C6 /* Cities.swift in Sources */,
 				94BE9D6C21126167001FC8C6 /* Announcement.swift in Sources */,
 				94BE9D6021121F66001FC8C6 /* PinterestLayout.swift in Sources */,
