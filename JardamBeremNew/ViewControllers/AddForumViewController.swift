@@ -22,19 +22,13 @@ class AddForumViewController: UIViewController {
     @IBAction func addForumTapped() {
         let feedbackModel = Feedback(nickName: nickName.text!, comment: textAddForum.text!)
         ServerManager.shared.giveFeedback(feedback: feedbackModel, completion: {
-            self.showSuccessAllert()
+            self.showSuccessAllert(aTitle: "Аллилуйя!", aMessage: "Ваш текст успешно добавлен")
         }, error: { (error) in
             print(error)
         })
     }
     
-    func showSuccessAllert() {
-        let alert = UIAlertController(title: "Аллилуйя", message: "Успешно добавлено", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-               self.navigationController?.popViewController(animated: true)
-            }))
-        self.present(alert, animated: true, completion: nil)
-    }
+
 }
     
 

@@ -38,6 +38,7 @@
 		94BE9D6821125DDE001FC8C6 /* LangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6721125DDC001FC8C6 /* LangViewController.swift */; };
 		94BE9D6A21125DE7001FC8C6 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6921125DE7001FC8C6 /* CitiesViewController.swift */; };
 		94BE9D6C21126167001FC8C6 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6B21126167001FC8C6 /* Announcement.swift */; };
+		94DDB5382115713000A9D1D9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DDB5372115713000A9D1D9 /* Extensions.swift */; };
 		94F7D3C32115621800E253D6 /* AddForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7D3C22115621800E253D6 /* AddForumViewController.swift */; };
 		94F7D3C5211564A500E253D6 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7D3C4211564A500E253D6 /* Feedback.swift */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		94BE9D6721125DDC001FC8C6 /* LangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangViewController.swift; sourceTree = "<group>"; };
 		94BE9D6921125DE7001FC8C6 /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		94BE9D6B21126167001FC8C6 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
+		94DDB5372115713000A9D1D9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		94F7D3C22115621800E253D6 /* AddForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForumViewController.swift; sourceTree = "<group>"; };
 		94F7D3C4211564A500E253D6 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				94BE9D422112042C001FC8C6 /* Constants.swift */,
 				94BE9D63211228BC001FC8C6 /* MenuEnum.swift */,
+				94DDB5372115713000A9D1D9 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				94BE9D3F2111FF58001FC8C6 /* HTTPRequestManager.swift in Sources */,
 				94BE9D432112042C001FC8C6 /* Constants.swift in Sources */,
 				94BE9D4D21121069001FC8C6 /* Forum.swift in Sources */,
+				94DDB5382115713000A9D1D9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
