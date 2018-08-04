@@ -24,9 +24,7 @@ class ForumViewController: UIViewController, UICollectionViewDataSource {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        ServerManager.shared.getForum(completion: setForum) { (error) in
-            print(error)
-        }
+        ServerManager.shared.getForum(completion: setForum, error: showErrorAllert)
     }
     
     @objc func addTapped() {

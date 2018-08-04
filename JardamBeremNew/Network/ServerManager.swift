@@ -114,11 +114,11 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
-    func giveFeedback(feedback: Feedback, completion: @escaping () -> (), error: (String) -> ()) {
+    func giveFeedback(feedback: Feedback, completion: @escaping () -> (), error: @escaping (String) -> ()) {
         self.post(endpoint: "forum/", parameters: feedback.feedbackToDictionary(), completion: { (data) in
             completion()
-        }) { (error) in
-            print(error)
+        }) { (errorMessage) in
+            error(errorMessage)
         }
     }
     

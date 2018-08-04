@@ -57,7 +57,7 @@ class HTTPRequestManager {
                 completion(response.data)
                 break
             default:
-                error("You got error")
+                error(response.error?.localizedDescription ?? "Server Error")
             }
         }
     }

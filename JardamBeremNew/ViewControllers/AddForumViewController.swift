@@ -23,9 +23,7 @@ class AddForumViewController: UIViewController {
         let feedbackModel = Feedback(nickName: nickName.text!, comment: textAddForum.text!)
         ServerManager.shared.giveFeedback(feedback: feedbackModel, completion: {
             self.showSuccessAllert(aTitle: "Аллилуйя!", aMessage: "Ваш текст успешно добавлен")
-        }, error: { (error) in
-            print(error)
-        })
+        }, error: showErrorAllert)
     }
     
 

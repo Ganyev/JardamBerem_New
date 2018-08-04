@@ -25,17 +25,15 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         categoriesCollectionView.dataSource = self
         categoriesCollectionView.delegate = self
         
-        ServerManager.shared.getCategories(completion: setCategories, error: printError)
-        ServerManager.shared.getAnnouncements(categoryid: 1, completion: setAnnouncements, error: printError)
+        ServerManager.shared.getCategories(completion: setCategories, error: showErrorAllert)
+        ServerManager.shared.getAnnouncements(categoryid: 1, completion: setAnnouncements, error: showErrorAllert)
         if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
             layout.delegate = self as! PinterestLayoutDelegate
         }
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     
-    func printError(error: String) {
-        print(error)
-    }
+
     
     func setCategories(categories: [Category]) {
         categoriesArray = categories
@@ -89,7 +87,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         if collectionView == self.categoriesCollectionView {
             
         let selectedId = categoriesArray[indexPath.item].id
-        ServerManager.shared.getAnnouncements(categoryid: selectedId!, completion: setAnnouncements, error: printError)
+        ServerManager.shared.getAnnouncements(categoryid: selectedId!, completion: setAnnouncements, error: showErrorAllert)
         self.collectionView.reloadData()
         }
     }

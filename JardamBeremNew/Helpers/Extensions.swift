@@ -17,4 +17,12 @@ extension UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func showErrorAllert(aMessage: String) {
+        let alert = UIAlertController(title: "Ошибка", message: aMessage, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
