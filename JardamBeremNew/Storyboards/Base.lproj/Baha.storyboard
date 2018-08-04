@@ -219,6 +219,48 @@
             </objects>
             <point key="canvasLocation" x="604" y="169.56521739130437"/>
         </scene>
+        <!--Add Forum View Controller-->
+        <scene sceneID="EJo-yx-nXB">
+            <objects>
+                <viewController storyboardIdentifier="addforum" id="8IM-0M-gtz" customClass="AddForumViewController" customModule="JardamBeremNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RWu-29-im0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-QP-ALv">
+                                <rect key="frame" x="20" y="120" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfG-Ht-6Ml">
+                                <rect key="frame" x="50" y="200" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jbd-QP-ALv" firstAttribute="top" secondItem="TaW-4q-fXF" secondAttribute="top" constant="100" id="58W-kB-FBm"/>
+                            <constraint firstItem="TaW-4q-fXF" firstAttribute="trailing" secondItem="CfG-Ht-6Ml" secondAttribute="trailing" constant="50" id="7Ag-NQ-ep7"/>
+                            <constraint firstItem="CfG-Ht-6Ml" firstAttribute="top" secondItem="Jbd-QP-ALv" secondAttribute="bottom" constant="50" id="7CZ-aK-3Gg"/>
+                            <constraint firstItem="CfG-Ht-6Ml" firstAttribute="leading" secondItem="TaW-4q-fXF" secondAttribute="leading" constant="50" id="DfM-Mg-A6G"/>
+                            <constraint firstItem="TaW-4q-fXF" firstAttribute="trailing" secondItem="Jbd-QP-ALv" secondAttribute="trailing" constant="20" id="bb7-52-L1t"/>
+                            <constraint firstItem="Jbd-QP-ALv" firstAttribute="leading" secondItem="TaW-4q-fXF" secondAttribute="leading" constant="20" id="glS-Pt-pAI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TaW-4q-fXF"/>
+                    </view>
+                    <connections>
+                        <outlet property="addForumButton" destination="CfG-Ht-6Ml" id="xrw-70-6KP"/>
+                        <outlet property="textAddForum" destination="Jbd-QP-ALv" id="Utq-JG-8Gk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FtU-YU-NY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="170"/>
+        </scene>
     </scenes>
     <resources>
         <image name="flickr" width="256" height="256"/>

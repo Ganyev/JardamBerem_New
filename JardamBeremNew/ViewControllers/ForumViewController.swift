@@ -11,20 +11,23 @@ import UIKit
 class ForumViewController: UIViewController, UICollectionViewDataSource {
     
     var forumArray: [Forum] = []
-    let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
     
     @IBOutlet weak var forumCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        
         self.navigationItem.rightBarButtonItem = add
         
         ServerManager.shared.getForum(completion: setForum) { (error) in
-            error
+            print(error)
         }
     }
     
     @objc func addTapped() {
-        
+        let storyboard = UIStoryboard.init(name: "Baha", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "addforum") as! AddForumViewController
+        self.show(vc, sender: self)
     }
     
     func setForum(forum: [Forum]) {

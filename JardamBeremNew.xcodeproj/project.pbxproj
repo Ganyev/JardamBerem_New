@@ -38,6 +38,7 @@
 		94BE9D6821125DDE001FC8C6 /* LangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6721125DDC001FC8C6 /* LangViewController.swift */; };
 		94BE9D6A21125DE7001FC8C6 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6921125DE7001FC8C6 /* CitiesViewController.swift */; };
 		94BE9D6C21126167001FC8C6 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9D6B21126167001FC8C6 /* Announcement.swift */; };
+		94F7D3C32115621800E253D6 /* AddForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7D3C22115621800E253D6 /* AddForumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		94BE9D6721125DDC001FC8C6 /* LangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangViewController.swift; sourceTree = "<group>"; };
 		94BE9D6921125DE7001FC8C6 /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		94BE9D6B21126167001FC8C6 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
+		94F7D3C22115621800E253D6 /* AddForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForumViewController.swift; sourceTree = "<group>"; };
 		BCB56960E72D16A8DEBD58A8 /* Pods-JardamBeremNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremNew/Pods-JardamBeremNew.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CA22C3F3E2A05A8BF552D0 /* Pods_JardamBeremNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -196,6 +198,7 @@
 				8414235C21134FD0006351DE /* CharityTableViewCell.swift */,
 				9413325721130615000A1215 /* ForumViewController.swift */,
 				841A050B211312150055D7F7 /* AddFoodViewController.swift */,
+				94F7D3C22115621800E253D6 /* AddForumViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				94BE9D6C21126167001FC8C6 /* Announcement.swift in Sources */,
 				94BE9D6021121F66001FC8C6 /* PinterestLayout.swift in Sources */,
 				94BE9D4B2112085A001FC8C6 /* Reviews.swift in Sources */,
+				94F7D3C32115621800E253D6 /* AddForumViewController.swift in Sources */,
 				94BE9D3F2111FF58001FC8C6 /* HTTPRequestManager.swift in Sources */,
 				94BE9D432112042C001FC8C6 /* Constants.swift in Sources */,
 				94BE9D4D21121069001FC8C6 /* Forum.swift in Sources */,
