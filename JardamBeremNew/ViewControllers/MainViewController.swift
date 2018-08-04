@@ -23,6 +23,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         categoriesCollectionView.dataSource = self
+        categoriesCollectionView.delegate = self
         
         ServerManager.shared.getCategories(completion: setCategories, error: printError)
         ServerManager.shared.getAnnouncements(categoryid: 1, completion: setAnnouncements, error: printError)
@@ -67,6 +68,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == self.collectionView {
         let cellWidth = (collectionView.frame.width - 30) / 2
         guard let imageWidth = announcementArray[indexPath.row].imgPath_width, let imageHeight = announcementArray[indexPath.row].imgPath_height else {
             return CGSize(width: cellWidth, height: cellWidth)
@@ -78,6 +80,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         let size = CGSize(width: Int(cellWidth), height: cellHeight)
         
         return size
+        }
+        return CGSize(width: 150, height: 150)
     
     }
 
