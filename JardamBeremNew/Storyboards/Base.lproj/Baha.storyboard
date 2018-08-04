@@ -227,8 +227,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-QP-ALv">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-QP-ALv">
                                 <rect key="frame" x="20" y="120" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -239,21 +240,35 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addForumTapped" destination="8IM-0M-gtz" eventType="touchUpInside" id="jNw-rE-doO"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NickName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ls-3P-GWt">
+                                <rect key="frame" x="30" y="55" width="315" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Jbd-QP-ALv" firstAttribute="top" secondItem="TaW-4q-fXF" secondAttribute="top" constant="100" id="58W-kB-FBm"/>
                             <constraint firstItem="TaW-4q-fXF" firstAttribute="trailing" secondItem="CfG-Ht-6Ml" secondAttribute="trailing" constant="50" id="7Ag-NQ-ep7"/>
                             <constraint firstItem="CfG-Ht-6Ml" firstAttribute="top" secondItem="Jbd-QP-ALv" secondAttribute="bottom" constant="50" id="7CZ-aK-3Gg"/>
+                            <constraint firstItem="2Ls-3P-GWt" firstAttribute="leading" secondItem="TaW-4q-fXF" secondAttribute="leading" constant="30" id="7pY-p5-Bpt"/>
                             <constraint firstItem="CfG-Ht-6Ml" firstAttribute="leading" secondItem="TaW-4q-fXF" secondAttribute="leading" constant="50" id="DfM-Mg-A6G"/>
                             <constraint firstItem="TaW-4q-fXF" firstAttribute="trailing" secondItem="Jbd-QP-ALv" secondAttribute="trailing" constant="20" id="bb7-52-L1t"/>
+                            <constraint firstItem="Jbd-QP-ALv" firstAttribute="top" secondItem="2Ls-3P-GWt" secondAttribute="bottom" constant="35" id="gWx-BY-UtR"/>
                             <constraint firstItem="Jbd-QP-ALv" firstAttribute="leading" secondItem="TaW-4q-fXF" secondAttribute="leading" constant="20" id="glS-Pt-pAI"/>
+                            <constraint firstItem="TaW-4q-fXF" firstAttribute="trailing" secondItem="2Ls-3P-GWt" secondAttribute="trailing" constant="30" id="qPS-63-PEL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TaW-4q-fXF"/>
                     </view>
                     <connections>
                         <outlet property="addForumButton" destination="CfG-Ht-6Ml" id="xrw-70-6KP"/>
+                        <outlet property="nickName" destination="2Ls-3P-GWt" id="35r-6D-nEx"/>
                         <outlet property="textAddForum" destination="Jbd-QP-ALv" id="Utq-JG-8Gk"/>
                     </connections>
                 </viewController>

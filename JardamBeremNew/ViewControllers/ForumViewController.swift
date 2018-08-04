@@ -15,10 +15,15 @@ class ForumViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var forumCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        forumCollectionView.dataSource = self
         
+        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
         self.navigationItem.rightBarButtonItem = add
         
+      
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         ServerManager.shared.getForum(completion: setForum) { (error) in
             print(error)
         }

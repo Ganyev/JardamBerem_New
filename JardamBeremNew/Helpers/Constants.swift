@@ -34,4 +34,5 @@ struct Constants {
             static let UNAUTHORIZED = "Unauthorized error"
         }
     }
+
 }
